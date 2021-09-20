@@ -40,6 +40,7 @@
   gtag('config', 'AW-318972118');
 </script>
 
+<!-- ETIQUETA FORMULARIO -->
 
 <script>
 window.addEventListener('DOMContentLoaded', function() {
@@ -47,6 +48,18 @@ window.addEventListener('DOMContentLoaded', function() {
         console.log('form');
         gtag('event', 'conversion', {'send_to': 'AW-318972118/-iJWCK200vUCENbBjJgB'});
     })
+});
+</script>
+
+<!-- ETIQUETA WHATSAPP -->
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href*="api.whatsapp"]').forEach( function(el) {
+        el.addEventListener('click', function(){
+            console.log('wpp')
+            tag('event', 'conversion', {'send_to': 'AW-318972118/CtYtCIP80vUCENbBjJgB'});
+        })})
 });
 </script>
 
@@ -417,8 +430,10 @@ window.addEventListener('DOMContentLoaded', function() {
           <div class="w-col w-col-3 w-col-tiny-3 w-col-small-3"><img src="images/mobile_white.svg" width="27" alt="" class="cel-logo"></div>
           <div class="w-col w-col-9 w-col-tiny-9 w-col-small-9">
             <h4 class="tel-text">
-              <a href="tel:+5491124053600" class="link-13">+54 9 11 2405 3600</a>
+
+              <a href="tel:+5491124053600" class="link-13"><span class="text-span-4">+54 9 11 2405 3600</span></a>
             </h4>
+
           </div>
         </div>
         <div class="row-cel w-row">
